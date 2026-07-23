@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Data Siswa - Jurnal Kelas</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body onload="cekLogin(); tampilSiswa()">
+
+
+
+<nav>
+
+<h2>
+📚 JURNAL KELAS
+</h2>
+
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="siswa.html">Siswa</a></li>
+
+<li><a href="guru.html">Guru</a></li>
+
+<li><a href="jadwal.html">Jadwal</a></li>
+
+<li><a href="piket.html">Piket</a></li>
+
+<li><a href="absen.html">Absen</a></li>
+
+<li><a href="pengumuman.html">Pengumuman</a></li>
+
+<li><a href="denah.html">Denah</a></li>
+
+<li>
+<a href="#" onclick="logout()" class="logout">
+Keluar
+</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+
+
+
+<div class="container">
+
+
+<h1>
+👨‍🎓 Data Siswa
+</h1>
+
+
+
+<div class="card">
+
+
+<h2>
+Tambah Siswa
+</h2>
+
+
+
+<input 
+type="text"
+id="namaSiswa"
+placeholder="Nama Siswa">
+
+
+
+<input 
+type="text"
+id="nisSiswa"
+placeholder="NIS">
+
+
+
+<select id="jkSiswa">
+
+<option>
+Laki-laki
+</option>
+
+<option>
+Perempuan
+</option>
+
+
+</select>
+
+
+
+<button onclick="tambahSiswa()">
+Tambah
+</button>
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+<div class="card">
+
+
+<h2>
+Daftar Siswa
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+No
+</th>
+
+<th>
+Nama
+</th>
+
+<th>
+NIS
+</th>
+
+<th>
+Jenis Kelamin
+</th>
+
+<th>
+Aksi
+</th>
+
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="dataSiswa">
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Absensi Kelas</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body onload="cekAkses(); tampilAbsen(); hitungAbsen()">
+
+
+
+<nav>
+
+<h2>
+📚 JURNAL KELAS
+</h2>
+
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="siswa.html">Siswa</a></li>
+
+<li><a href="guru.html">Guru</a></li>
+
+<li><a href="jadwal.html">Jadwal</a></li>
+
+<li><a href="piket.html">Piket</a></li>
+
+<li><a href="absen.html">Absen</a></li>
+
+<li><a href="pengumuman.html">Pengumuman</a></li>
+
+<li><a href="denah.html">Denah</a></li>
+
+<li><a href="profil.html">Profil</a></li>
+
+<li><a href="struktur.html">Struktur</a></li>
+
+<li>
+<a href="#" onclick="logout()" class="logout">
+Keluar
+</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+
+
+
+
+
+<div class="container">
+
+
+<h1>
+✅ Absensi Siswa
+</h1>
+
+
+
+
+<div class="dashboard-grid">
+
+
+
+<div class="card">
+
+<h2>
+🟢
+</h2>
+
+<h3>
+Hadir
+</h3>
+
+<p id="jumlahHadir">
+0
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>
+🟡
+</h2>
+
+<h3>
+Izin
+</h3>
+
+<p id="jumlahIzin">
+0
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+🔵
+</h2>
+
+<h3>
+Sakit
+</h3>
+
+<p id="jumlahSakit">
+0
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+🔴
+</h2>
+
+<h3>
+Alfa
+</h3>
+
+<p id="jumlahAlfa">
+0
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+<div class="card">
+
+
+<h2>
+Tambah Absensi
+</h2>
+
+
+
+<input 
+id="namaAbsen"
+placeholder="Nama Siswa">
+
+
+
+<select id="statusAbsen">
+
+
+<option>
+Hadir
+</option>
+
+
+<option>
+Izin
+</option>
+
+
+<option>
+Sakit
+</option>
+
+
+<option>
+Alfa
+</option>
+
+
+
+</select>
+
+
+
+<input 
+id="catatanAbsen"
+placeholder="Catatan">
+
+
+
+
+
+<button onclick="tambahAbsen()">
+Simpan Absensi
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Data Absensi
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+No
+</th>
+
+<th>
+Nama
+</th>
+
+<th>
+Status
+</th>
+
+<th>
+Catatan
+</th>
+
+<th>
+Aksi
+</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="dataAbsen">
+
+</tbody>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

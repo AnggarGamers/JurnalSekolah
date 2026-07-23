@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profil Kelas</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body onload="cekAkses(); tampilProfil();">
+
+
+
+<nav>
+
+<h2>
+📚 JURNAL KELAS
+</h2>
+
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="siswa.html">Siswa</a></li>
+
+<li><a href="guru.html">Guru</a></li>
+
+<li><a href="jadwal.html">Jadwal</a></li>
+
+<li><a href="piket.html">Piket</a></li>
+
+<li><a href="absen.html">Absen</a></li>
+
+<li><a href="pengumuman.html">Pengumuman</a></li>
+
+<li><a href="denah.html">Denah</a></li>
+
+<li><a href="profil.html">Profil</a></li>
+
+
+<li>
+<a href="#" onclick="logout()" class="logout">
+Keluar
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+
+
+<div class="container">
+
+
+<h1>
+⚙️ Pengaturan Profil Kelas
+</h1>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Data Kelas
+</h2>
+
+
+
+
+<input 
+id="namaSekolah"
+placeholder="Nama Sekolah">
+
+
+
+<input 
+id="namaKelas"
+placeholder="Nama Kelas">
+
+
+
+<input 
+id="waliKelas"
+placeholder="Wali Kelas">
+
+
+
+<input 
+id="ketuaKelas"
+placeholder="Ketua Kelas">
+
+
+
+<input 
+id="tahunAjaran"
+placeholder="Tahun Ajaran">
+
+
+
+
+
+<button onclick="simpanProfil()">
+Simpan Profil
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Preview Profil
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<td>
+Sekolah
+</td>
+
+<td id="lihatSekolah">
+-
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Kelas
+</td>
+
+<td id="lihatKelas">
+-
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Wali Kelas
+</td>
+
+<td id="lihatWali">
+-
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Ketua Kelas
+</td>
+
+<td id="lihatKetua">
+-
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Tahun
+</td>
+
+<td id="lihatTahun">
+-
+</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
